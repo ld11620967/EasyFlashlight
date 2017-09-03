@@ -2,15 +2,15 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background">
+    android:background="#1a1918">
 
-    <ImageButton
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:id="@+id/ibn"
-        android:background="#0000"
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/flashlight_ibn"
+        android:background="@drawable/button_on"
         android:scaleType="fitXY"
-        android:src="@animator/switch_animt"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
+
 </RelativeLayout>

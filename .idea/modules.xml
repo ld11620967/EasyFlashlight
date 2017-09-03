@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/EasyFlashlight.iml" filepath="$PROJECT_DIR$/EasyFlashlight.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SimpleFlashligh.iml" filepath="$PROJECT_DIR$/SimpleFlashligh.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

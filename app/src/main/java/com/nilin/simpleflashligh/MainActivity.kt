@@ -3,7 +3,6 @@ package com.nilin.simpleflashligh
 import android.app.Activity
 import android.content.Context
 import android.hardware.Camera
-import android.hardware.Camera.Parameters
 import android.hardware.camera2.CameraAccessException
 import android.hardware.camera2.CameraManager
 import android.os.Build
@@ -15,7 +14,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : Activity() {
     internal var isopen = 1
-    internal var camera: Camera? = null
+    var camera: Camera? = null
     private var manager: CameraManager? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,7 +32,7 @@ class MainActivity : Activity() {
         } else {
             camera = Camera.open()
             val params = camera!!.getParameters()
-            params.flashMode = Parameters.FLASH_MODE_TORCH
+            params.setFlashMode(Camera.Parameters.FLASH_MODE_TORCH)
             camera!!.setParameters(params)
             camera!!.startPreview()  // 开始亮灯
             }
@@ -64,7 +63,7 @@ class MainActivity : Activity() {
                     if (isopen == 0) {
                         camera = Camera.open()
                         val params = camera!!.getParameters()
-                        params.setFlashMode(Parameters.FLASH_MODE_TORCH)
+                        params.setFlashMode(Camera.Parameters.FLASH_MODE_TORCH)
                         camera!!.setParameters(params)
                         camera!!.startPreview()  // 开始亮灯
                         flashlight_ibn.setBackgroundResource(R.drawable.button_on)

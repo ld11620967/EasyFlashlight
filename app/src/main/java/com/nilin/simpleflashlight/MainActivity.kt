@@ -1,4 +1,4 @@
-package com.nilin.simpleflashligh
+package com.nilin.simpleflashlight
 
 import android.app.Activity
 import android.content.Context

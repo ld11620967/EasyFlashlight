@@ -1,4 +1,4 @@
-package com.nilin.simpleflashligh
+package com.nilin.simpleflashlight
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4

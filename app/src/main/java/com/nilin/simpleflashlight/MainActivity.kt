@@ -7,7 +7,7 @@ import android.hardware.camera2.CameraAccessException
 import android.hardware.camera2.CameraManager
 import android.os.Build
 import android.os.Bundle
-import android.support.annotation.RequiresApi
+import androidx.annotation.RequiresApi
 import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -17,6 +17,7 @@ class MainActivity : Activity() {
     var camera: Camera? = null
     private var manager: CameraManager? = null
 
+    @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
